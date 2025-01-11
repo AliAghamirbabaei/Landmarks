@@ -1,0 +1,24 @@
+//
+//  CircleImage.swift
+//  Landmarks
+//
+//  Created by Ali Aghamirbabaei on 1/11/25.
+//
+
+import SwiftUI
+
+struct CircleImage: View {
+    var body: some View {
+        Image("turtlerock")
+            .clipShape(Circle())
+            .overlay {
+                Circle()
+                    .stroke(.white, lineWidth: 4.0)
+            }
+            .shadow(radius: 7.0)
+    }
+}
+
+#Preview {
+    CircleImage()
+}
